@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peskic Designs</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f0c29, #000);
+    color: white;
+    position: relative;
+}
+
+/* ANIMIRANI BACKGROUND */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #6a00ff, #00eaff, #ff00c8);
+    animation: moveBg 20s linear infinite;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+@keyframes moveBg {
+    0% { transform: translate(0,0); }
+    50% { transform: translate(-25%, -25%); }
+    100% { transform: translate(0,0); }
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    background: linear-gradient(90deg, #00eaff, #6a00ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: linear-gradient(90deg, #00eaff, #6a00ff);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 25px #00eaff, 0 0 50px #6a00ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #00eaff, 0 0 70px #6a00ff;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 260px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #00eaff;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.portfolio img {
+    width: 260px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #00eaff;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.stat h3 {
+    font-size: 30px;
+    color: #00eaff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.6;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Peskic Designs</h1>
+    <p>Discord Servers • Thumbnails • Web Design</p>
+
+    <a href="https://peskic-design.myshopify.com/" target="_blank" class="btn">
+        🚀 Visit My Store
+    </a>
+</div>
+
+<!-- SERVICES -->
+<section>
+    <h2>🔥 My Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Discord Setup</h3>
+            <p>Professional server setup with roles and bots.</p>
+        </div>
+
+        <div class="card">
+            <h3>Thumbnails</h3>
+            <p>High quality YouTube thumbnails.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern websites for your business.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section>
+    <h2>💼 My Work</h2>
+
+    <div class="portfolio">
+        <img src="https://via.placeholder.com/260x150?text=Thumbnail+1">
+        <img src="https://via.placeholder.com/260x150?text=Thumbnail+2">
+        <img src="https://via.placeholder.com/260x150?text=Discord+Server">
+    </div>
+</section>
+
+<!-- STATS -->
+<section>
+    <h2>📊 Stats</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>50+</h3>
+            <p>Projects</p>
+        </div>
+
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat">
+            <h3>24h</h3>
+            <p>Delivery</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Peskic Designs</p>
+</footer>
+
+</body>
+</html>
